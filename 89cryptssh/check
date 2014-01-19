@@ -1,0 +1,5 @@
+#!/bin/sh
+# vim: ts=8 sw=4 sts=4 et filetype=sh
+
+. /usr/share/dracut/modules.d/89cryptssh/module-setup.sh
+check

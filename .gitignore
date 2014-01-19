@@ -1,1 +1,3 @@
 .*.swp
+wait_for_file
+89cryptssh/cryptroot-ask-wait_for_file.sh
