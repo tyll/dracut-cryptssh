@@ -47,7 +47,7 @@ int main(int argc, char** argv) {
         waitfile = argv[1];
         /* Wait until waitfile exists */
         while (1) {
-            if (res = stat(waitfile, &buf) == -1) {
+            if ((res = stat(waitfile, &buf)) == -1) {
                 sleep(1);
             } else {
                 break;
@@ -60,6 +60,10 @@ int main(int argc, char** argv) {
         return 0;
     } else {
         /* Execute command specified starting with argv[2] */
-        execvp(argv[2], &argv[2]);
+        if (execvp(argv[2], &argv[2]) == -1) {
+            perror("execvp");
+            return -1;
+        }
     }
+    return 0;
 }
