@@ -29,4 +29,5 @@ References/Credits
 This dracut module is inspired by information found at the following URLs:
 - http://roosbertl.blogspot.de/2012/12/centos6-disk-encryption-with-remote.html
 - https://bitbucket.org/bmearns/dracut-crypt-wait
+- https://github.com/rlwolfcastle/dracut-crypt-sshd
 - https://bugzilla.redhat.com/show_bug.cgi?id=524727
